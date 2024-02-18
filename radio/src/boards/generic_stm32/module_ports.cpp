@@ -171,8 +171,7 @@ DEFINE_STM32_SERIAL_PORT(ExternalModule, extmoduleUSART, INTMODULE_FIFO_SIZE, 0)
 
 static const stm32_usart_t sbus_trainer_USART = {
   .USARTx = TRAINER_MODULE_SBUS_USART,
-  .GPIOx = TRAINER_MODULE_SBUS_GPIO,
-  .GPIO_Pin = TRAINER_MODULE_SBUS_GPIO_PIN,
+  .rxGPIO = TRAINER_MODULE_SBUS_GPIO,
   .IRQn = (IRQn_Type)-1,
   .IRQ_Prio = 0,
   .txDMA = nullptr,
