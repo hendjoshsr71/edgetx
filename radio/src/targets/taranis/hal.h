@@ -1853,9 +1853,8 @@
   #define LED_STRIP_REFRESH_PERIOD          50  //ms
 #elif defined(RADIO_T14)
   #define LED_STRIP_LENGTH                  1
-  #define LED_STRIP_GPIO                    GPIOA
-  #define LED_STRIP_GPIO_PIN_DATA           LL_GPIO_PIN_10 // PA.10 / TIM1_CH3
-  #define LED_STRIP_GPIO_PIN_AF             LL_GPIO_AF_1
+  #define LED_STRIP_GPIO                    GPIO_PIN(GPIOA, 10) // PA.10 / TIM1_CH3
+  #define LED_STRIP_GPIO_AF             LL_GPIO_AF_1
   #define LED_STRIP_TIMER                   TIM1
   #define LED_STRIP_TIMER_FREQ              (PERI2_FREQUENCY * TIMER_MULT_APB2)
   #define LED_STRIP_TIMER_CHANNEL           LL_TIM_CHANNEL_CH3
