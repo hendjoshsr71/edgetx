@@ -237,8 +237,7 @@ static_assert(__IS_TRAINER_TIMER_IN_CHANNEL_SUPPORTED(TRAINER_MODULE_CPPM_TIMER_
               "Unsupported trainer timer input channel");
 
 static const stm32_pulse_timer_t trainerModuleTimer = {
-  .GPIOx = TRAINER_MODULE_CPPM_GPIO,
-  .GPIO_Pin = TRAINER_MODULE_CPPM_GPIO_PIN,
+  .GPIO = TRAINER_MODULE_CPPM_GPIO,
   .GPIO_Alternate = TRAINER_MODULE_CPPM_GPIO_AF,
   .TIMx = TRAINER_MODULE_CPPM_TIMER,
   .TIM_Freq = TRAINER_MODULE_CPPM_FREQ,
