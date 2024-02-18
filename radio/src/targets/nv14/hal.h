@@ -442,7 +442,7 @@
 #define TRAINER_TIMER                   TIM4
 #define TRAINER_TIMER_IRQn              TIM4_IRQn
 #define TRAINER_TIMER_IRQHandler        TIM4_IRQHandler
-#define TRAINER_GPIO_AF                 GPIO_AF2
+#define TRAINER_GPIO_AF                 LL_GPIO_AF_2
 #define TRAINER_TIMER_FREQ              (PERI1_FREQUENCY * TIMER_MULT_APB1)
 //ROTARY emulation for trims as buttons
 #define ROTARY_ENCODER_NAVIGATION
