@@ -24,11 +24,10 @@
 #include "timers_driver.h"
 #include "delays_driver.h"
 
+#include "debug.h"
 #include "crc.h"
 
 #include <string.h>
-
-#include "debug.h"
 
 #define SD_SPI_CLK_400K (400000UL)
 
