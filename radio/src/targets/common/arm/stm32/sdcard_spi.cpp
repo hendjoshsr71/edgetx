@@ -28,11 +28,7 @@
 
 #include <string.h>
 
-#if defined(BOOT)
-  #define TRACE(...)
-#else
-  #include "debug.h"
-#endif
+#include "debug.h"
 
 #define SD_SPI_CLK_400K (400000UL)
 

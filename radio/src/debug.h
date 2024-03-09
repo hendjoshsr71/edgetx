@@ -40,7 +40,7 @@ EXTERN_C(extern volatile uint32_t g_tmr10ms);
 #elif defined(SEMIHOSTING)
   #include <stdio.h>
   #define debugPrintf(...) printf(__VA_ARGS__)
-#elif defined(DEBUG)
+#elif defined(DEBUG) && !(!defined(COLORLCD) && defined(BOOT)) // No room in BW bootloader for debug
   #define debugPrintf(...) do { dbgSerialPrintf(__VA_ARGS__); } while(0)
 #else
   #define debugPrintf(...)
